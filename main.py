@@ -95,6 +95,7 @@ if st.button("Анализировать текст"):
 
         # Отображение результатов
         df = pd.DataFrame(results, columns=['Сообщение', 'Предсказанная тема'])
+        st.write(df)
         st.write(top_labels_str)
         st.write(f"Анализ завершён за {end_time - start_time:.2f} секунд.")
 
